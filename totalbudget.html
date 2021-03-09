@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Budget</title>
+</head>
+<body>
+    <script>
+        function totalBudget(laptop, mobile, mouse){
+            var lp=100;
+            var mb=50;
+            var ms=10;
+            var total= laptop*lp+ mobile*mb+mouse*ms;
+            document.write("laptop quantity " +laptop +"," + "mobile quantity " + mobile +"," +
+                             "mouse quantity " +mouse +"<br>");
+            return total;
+        }
+        var result =totalBudget(1,2,2);
+        document.write("Total Budget= " +result);
+    </script>
+</body>
+</html>

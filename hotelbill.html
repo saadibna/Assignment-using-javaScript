@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Hotel Bill</title>
+</head>
+<body>
+    <script>
+        function totalBill(day){
+            
+            if(day<=10){
+                var total =day*100;
+
+            }
+            else if(day<=20){
+                var fpayment=10*100;
+                var rem=day-10;
+                var secondPayment=rem*80;
+                var total=fpayment+secondPayment;
+             }
+            else{
+                var fpayment=10*100;
+                var rem=20-11;
+                var spayment=rem*80;
+                var rems= day-20;
+                var thirdPayment= rems*50;
+                var total=fpayment+spayment+thirdPayment;
+            }
+           
+            return total;
+        }
+
+        var result=totalBill(22);
+        document.write(result);
+    </script>
+</body>
+</html>
